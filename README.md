@@ -2,7 +2,7 @@
 
 Developed and maintained by [Bright Security](https://brightsec.com).
 
-An MCP (Model Context Protocol) server for integrating with the Freshdesk API. Provides 41 tools for managing support tickets, contacts, companies, and more.
+An MCP (Model Context Protocol) server for integrating with the Freshdesk API. Provides 42 tools for managing support tickets, contacts, companies, and more.
 
 > **Disclaimer:** This software is provided as-is by Bright Security. Use at your own risk. Bright Security makes no warranties regarding the reliability, accuracy, or completeness of this tool. You are solely responsible for how you use it and for any actions performed through the Freshdesk API. Always review tool actions before executing them in production environments.
 
@@ -45,7 +45,7 @@ npm run build
 }
 ```
 
-## Available Tools (41 Total)
+## Available Tools (42 Total)
 
 ### Ticket Operations (5 tools)
 | Tool | Description |
@@ -56,12 +56,13 @@ npm run build
 | `search_tickets` | Search tickets using Freshdesk query syntax |
 | `update_ticket` | Update ticket properties |
 
-### Conversation Operations (3 tools)
+### Conversation Operations (4 tools)
 | Tool | Description |
 |------|-------------|
 | `list_ticket_conversations` | Get all replies and notes for a ticket |
 | `reply_to_ticket` | Send a public reply (emails customer) |
 | `add_note_to_ticket` | Add private or public note |
+| `view_attachment` | Open a ticket/conversation attachment or inline email image (images are returned for viewing, text files as text, other files saved to a temp folder) |
 
 ### Contact Operations (5 tools)
 | Tool | Description |
